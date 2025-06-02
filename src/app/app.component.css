@@ -1,0 +1,163 @@
+body {
+    background-color: rgb(36, 35, 35);
+}
+
+.mainlogo {
+    background-color: rgb(26, 25, 25);
+    color: rgb(26, 25, 25);
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    margin-top: -5px;
+}
+
+.main {
+    height: 100px;
+    position: relative;
+    color: white;
+    padding: 5px;
+    background-color: rgb(26, 25, 25);
+    float: middle;
+}
+
+.icon-list {
+    background-color: rgb(26, 25, 25);
+    padding: 10px;
+    float: left;
+    height: 1200px;
+    position: absolute;
+}
+
+#searchinput {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    height: 20px;
+    float: middle;
+    position: relative;
+    top: -80px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
+    gap: 20px; /* Espaço entre as caixas */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#videoframe {
+    color: white;
+    width: 250px;
+    background-color: rgb(26, 25, 25);  
+   /* border: 1px solid black; */
+    padding: 10px 20px; 
+    margin: 20px auto;
+    float: middle;
+    /* align-items: center; */
+    display: grid;
+    border-radius: 20px;
+}
+
+.videoframe h1 {
+    margin-bottom: 4px;
+}
+
+.videoframe p {
+    margin-top: 0px;
+}
+
+#Thumbnail {
+    height: 156px;
+    width: 200px; 
+   /* border: 1px solid black; */
+    padding: 10px 20px; 
+    margin: 20px auto;
+    float: middle;
+    /* align-items: center; */
+    display: grid;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.searchicon img{
+    height: 40px; 
+    width: 40px; 
+    margin: 2px;
+    padding: 5px; 
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.homeicon img {
+    height: 40px; 
+    width: 40px; 
+    padding: 5px; 
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.clockicon img {
+    height: 40px; 
+    width: 40px; 
+    padding: 5px; 
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.likeicon img {
+    height: 40px; 
+    width: 40px; 
+    padding: 5px; 
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.playlisticon img {
+    height: 40px; 
+    width: 40px; 
+    padding: 5px; 
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.optionsicon img {
+    height: 40px; 
+    width: 40px; 
+    padding: 5px; 
+    border-radius: 20px;
+    margin-top: 650px;
+}
+
+input::placeholder {
+  color: gray;
+  font-style: italic;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+.clickable-div {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+@media (max-width: 768px) {
+  .videoframe {
+    width: 100%;
+  }
+}
