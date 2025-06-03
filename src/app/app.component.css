@@ -11,6 +11,15 @@ body {
     margin-top: -5px;
 }
 
+.userIcon {
+    display: flex;
+    align-items: center;
+    height: -300px;
+    width: 10px; 
+    margin: 1440px;
+    margin-top: -172px;
+}
+
 .main {
     height: 100px;
     position: relative;
@@ -161,6 +170,7 @@ input::placeholder {
   text-decoration: none;
   color: inherit;
 }
+
 
 
 @media (max-width: 768px) {
