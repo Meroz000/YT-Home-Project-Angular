@@ -11,13 +11,13 @@ body {
     margin-top: -5px;
 }
 
-.userIcon {
+.userIcon img{
     display: flex;
-    align-items: center;
-    height: -300px;
-    width: 10px; 
-    margin: 1440px;
-    margin-top: -172px;
+    height: -1px;
+    width: 10px;
+    margin: 1480px;
+    margin-top: -128px;
+    transform: scale(7); 
 }
 
 .main {
