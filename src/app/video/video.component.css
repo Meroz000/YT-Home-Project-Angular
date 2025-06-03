@@ -6,7 +6,7 @@ body {
     background-color: rgb(26, 25, 25);
     color: rgb(26, 25, 25);
     height: 100px;
-    width: 100px; 
+    width: 100px;
     margin: 20px;
     margin-top: -5px;
 }
@@ -24,19 +24,19 @@ body {
     background-color: rgb(26, 25, 25);
     padding: 10px;
     float: left;
-    height: 948px;
+    height: 1200px;
     position: absolute;
 }
 
 #searchinput {
     display: flex;
     align-items: center;
-    width: 600px; 
+    width: 500px;
     margin: 20px auto;
     border: 1px solid black;
     border-radius: 20px;
     padding: 5px 10px;
-    height: 35px;
+    height: 20px;
     float: middle;
     position: relative;
     top: -80px;
@@ -52,7 +52,7 @@ body {
 
 .videoframe {
     color: white;
-    width: 250px; 
+    width: 250px;
     background-color: rgb(26, 25, 25);  
    /* border: 1px solid black; */
     padding: 10px 20px; 
@@ -68,13 +68,15 @@ body {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 4px;
+    
 }
 
-.videoframe h1 {
+.titulo h2{
     margin-bottom: 4px;
+    font-size: 20px;
 }
 
-.videoframe p {
+.descricao {
     margin-top: 0px;
 }
 
@@ -138,7 +140,7 @@ body {
     width: 40px; 
     padding: 5px; 
     border-radius: 20px;
-    margin-top: 450px;
+    margin-top: 650px;
 }
 
 input::placeholder {

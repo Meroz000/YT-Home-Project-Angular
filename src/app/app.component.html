@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../app/app.component.css">
-    <script src="../YT-Home-Test-main/js/main.js"></script>
-    <title>YouTube</title>
+  <meta charset="utf-8">
+  <title>YTHomeTestMain</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-        <div class="main">
+   <div class="main">
         <div class="mainlogo">
             <img src="youtube.png" alt="icon" style="width: 100px; height: 100px; background-color: rgb(26, 25, 25);">
         </div> 
@@ -24,80 +24,19 @@
             <div class="playlisticon"><img src="playlist.png" alt="Playlist"></div>
             <div class="optionsicon"><img src="options.png" alt="Options"></div>
         </div>
-
-        <div class="container">
-
-        <div id="videoframe">
-            <div class="thumbnail">
-                <img id="Thumbnail" src="thumb1.jpg" alt="Thumbnail">
-            </div>
-            <h1>Vídeo 1</h1>
-            <p>Descrição</p>
-        </div>
-         <div id="videoframe">
-            <div class="thumbnail">
-                <img id="Thumbnail" src="thumb2.jpg" alt="Thumbnail">
-            </div>
-            <h1>Vídeo 2</h1>
-            <p>Descrição</p>
-        </div>
-         <div id="videoframe">
-            <div class="thumbnail">
-                <img id="Thumbnail" src="thumb3.jpg" alt="Thumbnail">
-            </div>
-            <h1>Vídeo 3</h1>
-            <p>Descrição</p>
-        </div>
-
-        <div id="videoframe">
-            <div class="thumbnail">
-                <img id="Thumbnail" src="thumb4.jpg" alt="Thumbnail">
-            </div>
-            <h1>Vídeo 4</h1>
-            <p>Descrição</p>
-        </div>
-
-        <div id="videoframe">
-            <div class="thumbnail">
-                <img id="Thumbnail" src="thumb5.jpg" alt="Thumbnail">
-            </div>
-            <h1>Vídeo 5</h1>
-            <p>Descrição</p>
-        </div>
-
-        <div id="videoframe">
-            <div class="thumbnail">
-                <img id="Thumbnail" src="thumb6.jpg" alt="Thumbnail">
-            </div>
-            <h1>Vídeo 6</h1>
-            <p>Descrição</p>
-        </div>
-
-        <div id="videoframe">
-            <div class="thumbnail">
-                <img id="Thumbnail" src="thumb7.jpg" alt="Thumbnail">
-            </div>
-            <h1>Vídeo 7</h1>
-            <p>Descrição</p>
-        </div>
-
-        <div id="videoframe">
-            <div class="thumbnail">
-                <img id="Thumbnail" src="thumb8.jpg" alt="Thumbnail">
-            </div>
-            <h1>Vídeo 8</h1>
-            <p>Descrição</p>
-        </div>
-
-        <div id="videoframe">
-            <div class="thumbnail">
-                <img id="Thumbnail" src="thumb9.jpg" alt="Thumbnail">
-            </div>
-            <h1>Vídeo 9</h1>
-            <p>Descrição</p>
-        </div>
         
-        </div>
+    
+    <div class="container">
+
+        @for (video of videos; track $index) {
+            <app-video 
+            [titulo]="video.titulo" 
+            [descricao]="video.descricao" 
+            [thumbnail]="video.thumbnail">
+            </app-video>
+        }
+
+    </div>
        
 </body>
 </html>
