@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, input, Input } from '@angular/core';
 
 @Component({
   selector: 'app-video',
@@ -11,4 +11,5 @@ export class VideoComponent {
   @Input() thumbnail: string = '';
   @Input() titulo: string = '';
   @Input() descricao: string = '';
+  @Input() video: string = '';
 }

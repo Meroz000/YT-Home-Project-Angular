@@ -1,14 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Youtube</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet"> <!-- Fonte do titulo -->
-</head>
+
 <body>
+
    <div class="main">
         <div class="mainlogo">
             <img src="youtube.png" alt="icon" style="width: 100px; height: 100px; background-color: rgb(26, 25, 25);">
@@ -31,16 +23,19 @@
         
     
     <div class="container">
-
+    
+        <a routerLink="/pagina1">Cliqueaqui</a>
+    
         @for (video of videos; track $index) {
             <app-video 
             [titulo]="video.titulo" 
             [descricao]="video.descricao" 
-            [thumbnail]="video.thumbnail">
+            [thumbnail]="video.thumbnail"
+            [video]="video.video">
             </app-video>
         }
 
     </div>
        
 </body>
-</html>
+<router-outlet></router-outlet>
