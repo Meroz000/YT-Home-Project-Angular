@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
 import { VideopageComponent } from './videopage/videopage.component';
-import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
-
-export const routes: Routes = [
-  { path: 'home', component: AppComponent},
-  { path: 'pagina1', component: VideopageComponent }
+export const routes: Routes = [ 
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent},
+  { path: 'video', component: VideopageComponent }
 ];

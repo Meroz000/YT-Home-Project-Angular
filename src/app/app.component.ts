@@ -2,16 +2,9 @@ import { Component } from '@angular/core';
 import { VideoComponent } from "./video/video.component";
 import { RouterModule } from '@angular/router';
 
-interface Video {
-  class: string;
-  titulo: string;
-  descricao: string;
-  thumbnail: string;
-}
-
 @Component({
   selector: 'app-root',
-  imports: [VideoComponent, RouterModule],
+  imports: [ RouterModule],
   templateUrl: './app.component.html', 
   styleUrl: './app.component.css',
 })

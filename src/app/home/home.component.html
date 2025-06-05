@@ -1,3 +1,4 @@
+
 <body>
     
    <div class="main">
@@ -23,9 +24,11 @@
     
     <div class="container">
     
-        <a routerLink="/pagina1">Cliqueaqui</a>
+        <a routerLink="/video">Cliqueaqui</a>
         
+
         @for (video of videos; track $index) {
+            
             <app-video
             [titulo]="video.titulo" 
             [descricao]="video.descricao" 
