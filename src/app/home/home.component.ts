@@ -1,5 +1,3 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { VideoComponent } from '../video/video.component';
 import { RouterModule } from '@angular/router';
