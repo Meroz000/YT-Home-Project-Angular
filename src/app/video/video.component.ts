@@ -12,4 +12,5 @@ export class VideoComponent {
   @Input() titulo: string = '';
   @Input() descricao: string = '';
   @Input() video: string = '';
+
 }

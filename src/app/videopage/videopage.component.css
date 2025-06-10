@@ -2,6 +2,12 @@ body {
     background-color: rgb(36, 35, 35);
 }
 
+html, body {
+  margin: -5;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .mainlogo {
     background-color: rgb(26, 25, 25);
     color: rgb(26, 25, 25);
@@ -135,7 +141,7 @@ body {
     color: white;
     position: relative;
     left: -300px;
-    top: -17px;
+    top: -8px;
     width: 900px; 
     background-color: rgb(26, 25, 25);  
    /* border: 1px solid black; */ 

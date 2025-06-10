@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { VideoComponent } from '../video/video.component';
 import { RouterModule } from '@angular/router';
+import { VideoComponent } from '../video/video.component';
 
 @Component({
   selector: 'app-home',
-  imports: [VideoComponent, RouterModule],
+  imports: [RouterModule, VideoComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
+
 export class HomeComponent {
   videos = [{
     class: "videoframe",
