@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './video.component.html',
   styleUrl: './video.component.css'
 })
+
 export class VideoComponent {
   @Input() thumbnail: string = '';
   @Input() titulo: string = '';
@@ -22,11 +23,9 @@ export class VideoComponent {
 
     this.router.navigate([
       '/video',
-      
-    ]);}
+      this.video,
+    ], { queryParams: {titulo: this.titulo, descricao: this.descricao }});}
 
 }
 
-//  this.video, 
-//  this.titulo, 
-//  this.descricao
+ 
