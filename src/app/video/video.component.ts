@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-video',
@@ -13,4 +14,19 @@ export class VideoComponent {
   @Input() descricao: string = '';
   @Input() video: string = '';
 
+  constructor(private router: Router) {}
+
+  OnClick() {
+    // Aqui você pode implementar a lógica para lidar com o clique no vídeo
+    console.log(`Vídeo selecionado: ${this.titulo}`);
+
+    this.router.navigate([
+      '/video',
+      
+    ]);}
+
 }
+
+//  this.video, 
+//  this.titulo, 
+//  this.descricao

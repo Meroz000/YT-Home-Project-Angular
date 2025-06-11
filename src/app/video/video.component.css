@@ -115,6 +115,18 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
+.linkplay {
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  top: -170px;
+  left: 21px;
+  padding: 100px;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
+
 .buttonplay:hover .play {
   opacity: 1;
 }
