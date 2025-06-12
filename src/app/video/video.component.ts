@@ -23,9 +23,8 @@ export class VideoComponent {
 
     this.router.navigate([
       '/video',
-      this.video,
-    ], { queryParams: {titulo: this.titulo, descricao: this.descricao }});}
+    ], { queryParams: {video: this.video, titulo:  this.titulo, descricao: this.descricao }} );}
 
 }
 
- 
+
