@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { HomeComponent } from "../home/home.component";
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-videopage',
@@ -10,14 +9,19 @@ import { HomeComponent } from "../home/home.component";
   styleUrl: './videopage.component.css'
 })
 
-export class VideopageComponent {
+export class VideopageComponent implements OnInit {
 
-  @Input() videos: {
-    titulo: string; 
-    descricao: string; 
-    video: string;
-  }[] = []; // recebe o array do pai
+  video: string = '';
+  titulo: string = '';
+  descricao: string = '';
 
-  selectedVideo = this.videos[0]; // por exemplo, o segundo item do array
+  constructor(private router: ActivatedRoute) {}
 
+  ngOnInit(): void {
+    this.router.queryParams.subscribe(params => {
+      this.video = params['video'] || '';
+      this.titulo = params['titulo'] || '';
+      this.descricao = params['descricao'] || '';
+    })
+  }
 }
