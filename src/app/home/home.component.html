@@ -9,8 +9,26 @@
             <label for="searchinput" class="visually-hidden">Search</label>
             <input id="searchinput" placeholder="Pesquisar..." aria-label="Search">
         <div class="userIcon">
+            <button (click)="ShowModal()" class="modalbutton"></button>
             <img src="user_header.png" alt="User Icon">
         </div>
+
+    <div class="modal-backdrop" *ngIf="IsOpen">
+        <div class="modal"> 
+            <img src="user_header.png" alt="User Icon" class="modal-icon">
+            <img src="email.png" alt="Email Icon" class="email-modal-icon">
+            <img src="logout.png" alt="Logout Icon" class="logout-modal-icon">
+            <button (click)="closeModal()" class="close-modal">
+                <img src="close.png" alt="Close Icon">
+            </button>
+            
+            <h1>Usuario</h1>
+            <h2>Email.gmail.com</h2>
+            
+            
+         </div>
+    </div>
+        
         </div>
 
         <div class="icon-list">

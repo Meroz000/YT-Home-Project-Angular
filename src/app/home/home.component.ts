@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { VideoComponent } from '../video/video.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterModule, VideoComponent],
+  imports: [RouterModule, VideoComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -65,4 +66,15 @@ export class HomeComponent {
     thumbnail: "thumb9.jpg",
     video: "sample-4.mp4"
   }]
+
+@Input() IsOpen = false;
+@Input() User = '';
+@Input() Email = '';
+
+  ShowModal() {
+    this.IsOpen = true;
+  }
+  closeModal() {
+    this.IsOpen = false;
+  }
 }
