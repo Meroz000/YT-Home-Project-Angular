@@ -3,9 +3,13 @@ body {
 }
 
 html, body {
-  margin: -5;
+  margin: -5px;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 105vw;
+  max-height: 150vh;
 }
 
 :host {
@@ -30,6 +34,7 @@ html, body {
     margin: 1530px;
     margin-top: -128px;
     transform: scale(7); 
+    margin-left: 200vh;
 }
 
 .usericon:hover img {
@@ -38,19 +43,18 @@ html, body {
 
 .main {
     height: 100px;
-    position: relative;
     color: white;
     padding: 5px;
     background-color: rgb(26, 25, 25);
-    float: middle;
 }
 
 .icon-list {
     background-color: rgb(26, 25, 25);
     padding: 10px;
     float: left;
-    height: 1000px;
-    position: absolute;
+    height: 150vh;
+    margin-top: -1500px;
+    margin-left: -10px;
 }
 
 #searchinput {
@@ -71,8 +75,8 @@ html, body {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
     gap: 20px; /* Espaço entre as caixas */
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 100vh;
+    margin-left: 350px;
 }
 
 .videoframe {
@@ -81,8 +85,8 @@ html, body {
     background-color: rgb(26, 25, 25);  
    /* border: 1px solid black; */
     padding: 10px 20px; 
-    margin: 20px auto;
-    float: middle;
+    margin: 20px;
+    /* float: middle; */
     /* align-items: center; */
     display: grid;
     border-radius: 20px;
@@ -117,7 +121,7 @@ html, body {
     margin-top: 0px;
 }
 
-.searchicon img{
+.searchicon img {
     height: 40px; 
     width: 40px; 
     margin: 2px;
@@ -131,7 +135,7 @@ html, body {
     width: 40px; 
     padding: 5px; 
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 40px;;
 }
 
 .clockicon img {
@@ -163,7 +167,7 @@ html, body {
     width: 40px; 
     padding: 5px; 
     border-radius: 20px;
-    margin-top: 490px;
+    margin-top: 500px;
 }
 
 input::placeholder {
@@ -190,7 +194,7 @@ input::placeholder {
 .modalbutton {
     position: absolute;
     top: 20px;
-    left: 1507px;
+    left: 1460px;
     width: 10px;
     height: 10px;
     padding: 30px;

@@ -19,7 +19,7 @@ html, body {
 
 .main {
     height: 100px;
-    position: relative;
+    width: 100vw;
     color: white;
     padding: 5px;
     background-color: rgb(26, 25, 25);
@@ -28,10 +28,11 @@ html, body {
 
 .icon-list {
     background-color: rgb(26, 25, 25);
-    padding: 10px;
+    padding: 15px;
     float: left;
-    height: 1000px;
-    position: absolute;
+    height: 140vh;
+    margin-top: -80px;
+    margin-left: -20px;
 }
 
 .BorderBox {
@@ -47,6 +48,16 @@ html, body {
     position: relative;
     top: -130px;
     left: 300px;
+}
+
+.homebutton {
+    justify-content: center;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    margin-left: -50px;
+    cursor: pointer;
+    border: none;
 }
 
 #searchinput {
@@ -139,17 +150,14 @@ html, body {
 
 .videoframe {
     color: white;
-    position: relative;
-    left: -300px;
-    top: -8px;
+   /* position: relative; */
     width: 900px; 
     background-color: rgb(26, 25, 25);  
    /* border: 1px solid black; */ 
     padding: 40px 50px; 
-    margin: 20px auto; 
-    float: left; 
-    display: block;
+    margin-top: 10px;
     border-radius: 10px;
+    margin-left: -50px;
 }
 
 .likevideo {
@@ -193,6 +201,7 @@ html, body {
     padding: 5px; 
     border-radius: 20px;
     margin-top: 40px;
+    margin-left: 10px;
 }
 
 .homeicon img {
@@ -200,7 +209,8 @@ html, body {
     width: 40px; 
     padding: 5px; 
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 
 .clockicon img {
@@ -209,6 +219,7 @@ html, body {
     padding: 5px; 
     border-radius: 20px;
     margin-top: 40px;
+    margin-left: 10px;
 }
 
 .likeicon img {
@@ -216,7 +227,8 @@ html, body {
     width: 40px; 
     padding: 5px; 
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 40px;  
+    margin-left: 10px;
 }
 
 .playlisticon img {
@@ -225,6 +237,7 @@ html, body {
     padding: 5px; 
     border-radius: 20px;
     margin-top: 40px;
+    margin-left: 10px;
 }
 
 .optionsicon img {
@@ -232,7 +245,8 @@ html, body {
     width: 40px; 
     padding: 5px; 
     border-radius: 20px;
-    margin-top: 500px;
+    margin-top: 490px;
+    margin-left: 10px;
 }
 
 input::placeholder {
