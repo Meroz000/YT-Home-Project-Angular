@@ -35,6 +35,7 @@ html, body {
     margin-top: -128px;
     transform: scale(7); 
     margin-left: 200vh;
+    transition: transform 0.3s;
 }
 
 .usericon:hover img {
@@ -128,6 +129,12 @@ html, body {
     padding: 5px; 
     border-radius: 20px;
     margin-top: 40px;
+    transition: transform 0.3s;
+}
+
+.searchicon:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .homeicon img {
@@ -135,7 +142,13 @@ html, body {
     width: 40px; 
     padding: 5px; 
     border-radius: 20px;
-    margin-top: 40px;;
+    margin-top: 40px;
+    transition: transform 0.3s;
+}
+
+.homeicon:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .clockicon img {
@@ -144,6 +157,12 @@ html, body {
     padding: 5px; 
     border-radius: 20px;
     margin-top: 40px;
+    transition: transform 0.3s;
+}
+
+.clockicon:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .likeicon img {
@@ -152,6 +171,12 @@ html, body {
     padding: 5px; 
     border-radius: 20px;
     margin-top: 40px;
+    transition: transform 0.3s;
+}
+
+.likeicon:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .playlisticon img {
@@ -160,6 +185,12 @@ html, body {
     padding: 5px; 
     border-radius: 20px;
     margin-top: 40px;
+    transition: transform 0.3s;
+}
+
+.playlisticon:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .optionsicon img {
@@ -168,6 +199,12 @@ html, body {
     padding: 5px; 
     border-radius: 20px;
     margin-top: 500px;
+    transition: transform 0.3s;
+}
+
+.optionsicon:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 input::placeholder {
@@ -189,6 +226,15 @@ input::placeholder {
   width: 100%;
   text-decoration: none;
   color: inherit;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
 }
 
 .modalbutton {
@@ -297,11 +343,14 @@ input::placeholder {
     right: -12px;
     width: 50px;
     height: 50px;
+    transition: transform 0.3s;
 }
 
 .close-modal:hover img {
     scale: 0.6;
+    transform: scale(1.2);
 }
+
 
 @media (max-width: 768px) {
   .videoframe {

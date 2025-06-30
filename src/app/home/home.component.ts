@@ -1,16 +1,21 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { VideoComponent } from '../video/video.component';
 import { CommonModule } from '@angular/common';
+import { EventEmitter } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterModule, VideoComponent, CommonModule],
+  imports: [RouterModule, VideoComponent, CommonModule, FormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 
 export class HomeComponent {
+
+  searchTerm: string = '';
+
   videos = [{
     class: "videoframe",
     titulo: "Vídeo 1",
@@ -67,9 +72,23 @@ export class HomeComponent {
     video: "sample-4.mp4"
   }]
 
+originalVideos = [...this.videos];
+
 @Input() IsOpen = false;
 @Input() User = '';
 @Input() Email = '';
+
+ handleSearch(query: string) {
+  this.videos = this.originalVideos.filter(video =>
+    video.titulo.toLowerCase().includes(query.toLowerCase())
+  );
+}
+
+@Output() search = new EventEmitter<string>();
+
+onSearchChange(): void {
+  this.search.emit(this.searchTerm);
+}
 
   ShowModal() {
     this.IsOpen = true;

@@ -56,8 +56,9 @@ html, body {
     height: 50px;
     width: 50px;
     margin-left: -50px;
-    cursor: pointer;
-    border: none;
+    cursor: pointer;    
+    opacity: 0;
+    z-index: 2;
 }
 
 #searchinput {
@@ -202,6 +203,12 @@ html, body {
     border-radius: 20px;
     margin-top: 40px;
     margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.searchicon:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .homeicon img {
@@ -211,6 +218,11 @@ html, body {
     border-radius: 20px;
     margin-top: 50px;
     margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.homeicon:hover img {
+  transform: scale(1.2);
 }
 
 .clockicon img {
@@ -220,6 +232,12 @@ html, body {
     border-radius: 20px;
     margin-top: 40px;
     margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.clockicon:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .likeicon img {
@@ -229,6 +247,12 @@ html, body {
     border-radius: 20px;
     margin-top: 40px;  
     margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.likeicon:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .playlisticon img {
@@ -238,6 +262,12 @@ html, body {
     border-radius: 20px;
     margin-top: 40px;
     margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.playlisticon:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .optionsicon img {
@@ -247,6 +277,12 @@ html, body {
     border-radius: 20px;
     margin-top: 490px;
     margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.optionsicon:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 input::placeholder {
